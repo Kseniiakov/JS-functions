@@ -89,7 +89,7 @@
 // let result = possTriangle (sideAC, sideAB, sideBC);
 // alert( result);
 
-// Classwork ////////////////////////////////////////////
+// Classwork minNum ////////////////////////////////////////////
 
 Num1 = Number (prompt('введите первое число'));
 Num2 = Number (prompt('введите второе число'));
@@ -99,7 +99,7 @@ function minNum (a, b) {
     return null;
   }
 
-  if (a < b){
+  if (a <= b){
     return a;
   }
 
