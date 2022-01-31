@@ -69,46 +69,46 @@
 
 // Ex. 4 ////////////////////////////////////////////
 
-// sideAC = Number (prompt('введите первую сторону треугольника'));
-// sideAB = Number (prompt('введите вторую сторону треугольника'));
-// sideBC = Number (prompt('введите третью сторону треугольника'));
+sideAC = Number (prompt('введите первую сторону треугольника'));
+sideAB = Number (prompt('введите вторую сторону треугольника'));
+sideBC = Number (prompt('введите третью сторону треугольника'));
 
-// function possTriangle (ac, ab, bc) {
+function possTriangle (ac, ab, bc) {
 
-//   if (isNaN(ac) || isNaN(ab) || isNaN(bc)) {
-//     return null;
-//   }
-
-//   if (ac <= ab + bc && ab <= ac + bc && bc <= ac + ab) {
-//     return true;
-//   }
-
-//   return false;
-// }
-
-// let result = possTriangle (sideAC, sideAB, sideBC);
-// alert( result);
-
-// Classwork minNum ////////////////////////////////////////////
-
-Num1 = Number (prompt('введите первое число'));
-Num2 = Number (prompt('введите второе число'));
-
-function minNum (a, b) {
-  if (isNaN(a) || isNaN(b)) {
+  if (isNaN(ac) || isNaN(ab) || isNaN(bc)) {
     return null;
   }
 
-  if (a <= b){
-    return a;
+  if (ac <= ab + bc && ab <= ac + bc && bc <= ac + ab) {
+    return true;
   }
 
-  if (a > b){
-    return b;
-  }
-
-  return null;
+  return false;
 }
 
-let result = minNum (Num1, Num2);
+let result = possTriangle (sideAC, sideAB, sideBC);
 alert( result);
+
+// Classwork minNum ////////////////////////////////////////////
+
+// Num1 = Number (prompt('введите первое число'));
+// Num2 = Number (prompt('введите второе число'));
+
+// function minNum (a, b) {
+//   if (isNaN(a) || isNaN(b)) {
+//     return null;
+//   }
+
+//   if (a <= b){
+//     return a;
+//   }
+
+//   if (a > b){
+//     return b;
+//   }
+
+//   return null;
+// }
+
+// let result = minNum (Num1, Num2);
+// alert( result);
